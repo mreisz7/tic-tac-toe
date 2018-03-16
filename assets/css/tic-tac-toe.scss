@@ -1,0 +1,133 @@
+$background-color:    #191919;
+$font-color:          #CDC400;
+$board-divider:       3px solid $font-color;
+
+* {
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+html {
+  font-size: 15px;
+}
+
+@media (min-resolution: 192dpi),
+(-webkit-min-device-pixel-ratio: 2),
+(min--moz-device-pixel-ratio: 2),
+(-o-min-device-pixel-ratio: 2/1),
+(min-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+  html {
+    font-size: 30px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),
+(min--moz-device-pixel-ratio: 3),
+(-o-min-device-pixel-ratio: 3/1),
+(min-device-pixel-ratio: 3),
+(min-resolution: 3dppx) {
+  html {
+    font-size: 40px;
+  }
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  background: $background-color;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: $font-color;
+  align-items: center;
+}
+
+#tic-tac-toe-container {
+  display: flex;
+  flex-flow: column nowrap;
+
+  .row {
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1;
+
+    .cell {
+      flex: 1;
+      height: 15em;
+      width: 15em;
+      background: $background-color;
+      cursor: pointer;
+
+      &:hover {
+        background: radial-gradient(circle, lighten($background-color, 2%) 1%, $background-color 99%);
+      }
+    }
+  }
+
+  #a1 {
+    border-right: $board-divider;
+    border-bottom: $board-divider;
+  }
+
+  #a2 {
+    border-right: $board-divider;
+    border-bottom: $board-divider;
+    border-left: $board-divider;
+  }
+
+  #a3 {
+    border-bottom: $board-divider;
+    border-left: $board-divider;
+  }
+
+  #b1 {
+    border-top: $board-divider;
+    border-right: $board-divider;
+    border-bottom: $board-divider;
+  }
+
+  #b2 {
+    border: $board-divider;
+  }
+
+  #b3 {
+    border-top: $board-divider;
+    border-bottom: $board-divider;
+    border-left: $board-divider;
+  }
+
+  #c1 {
+    border-right: $board-divider;
+    border-top: $board-divider;
+  }
+
+  #c2 {
+    border-right: $board-divider;
+    border-top: $board-divider;
+    border-left: $board-divider;
+  }
+
+  #c3 {
+    border-top: $board-divider;
+    border-left: $board-divider;
+  }
+}
+
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: none;
+  width: 100%;
+  padding: 1em 2em;
+
+  #copyright {
+    flex: 1;
+    align-content: left;
+  }
+
+  #footer-link {
+    flex: none;
+  }
+}
