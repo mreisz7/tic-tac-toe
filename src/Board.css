@@ -1,0 +1,101 @@
+/*
+  Color Palette
+  Blue:     #0E68FF
+  Red:      #FF4200
+  Green:    #42CF13
+  Grey:     #94BF8A
+  Charcoal: #383637
+  White:    #FFFFFF
+*/
+
+#tic-tac-toe-container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+#tic-tac-toe-container .row {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1;
+}
+
+#tic-tac-toe-container .row .cell {
+  flex: 1;
+  height: 10em;
+  width: 10em;
+  cursor: pointer;
+}
+
+.winning-cell {
+  color: #FFFFFF !important;
+}
+
+.winning-cell.player1 {
+  background-color: #FF4200;
+}
+
+.winning-cell.player2 {
+  background-color: #0E68FF;
+}
+
+.player1 {
+  color: #FF4200;
+}
+
+.player2 {
+  color: #0E68FF;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+#a1 {
+  border-right: 3px solid #424242;
+  border-bottom: 3px solid #424242;
+}
+
+#a2 {
+  border-right: 3px solid #424242;
+  border-bottom: 3px solid #424242;
+  border-left: 3px solid #424242;
+}
+
+#a3 {
+  border-bottom: 3px solid #424242;
+  border-left: 3px solid #424242;
+}
+
+#b1 {
+  border-top: 3px solid #424242;
+  border-right: 3px solid #424242;
+  border-bottom: 3px solid #424242;
+}
+
+#b2 {
+  border: 3px solid #424242;
+}
+
+#b3 {
+  border-top: 3px solid #424242;
+  border-bottom: 3px solid #424242;
+  border-left: 3px solid #424242;
+}
+
+#c1 {
+  border-right: 3px solid #424242;
+  border-top: 3px solid #424242;
+}
+
+#c2 {
+  border-right: 3px solid #424242;
+  border-top: 3px solid #424242;
+  border-left: 3px solid #424242;
+}
+
+#c3 {
+  border-top: 3px solid #424242;
+  border-left: 3px solid #424242;
+}
