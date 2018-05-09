@@ -173,7 +173,6 @@ class App extends Component {
           {boardDisplay}
           {winner}
         </div>
-        <h2 onClick={() => this.nextView()}>Next</h2>
       </div>
       <span id="footer-copyright">&copy; 2018 Michael Reisz</span>
       <a href="https://www.mreisz.com" target="_blank" rel="noopener noreferrer">
