@@ -22,7 +22,9 @@
 #tic-tac-toe-container .row .cell {
   flex: 1;
   height: 10em;
+  max-height: 32vw;
   width: 10em;
+  max-width: 32vw;
   cursor: pointer;
 }
 

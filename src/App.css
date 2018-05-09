@@ -17,25 +17,17 @@ html {
   font-size: 15px;
 }
 
-@media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2 / 1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
-  html {
-    font-size: 30px;
-  }
-}
-
-@media (-webkit-min-device-pixel-ratio: 3), (min--moz-device-pixel-ratio: 3), (-o-min-device-pixel-ratio: 3 / 1), (min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
-  html {
-    font-size: 40px;
-  }
-}
-
 body {
   overflow: hidden;
-  min-height: 100vh;
+  height: 100vh;
   margin: 0;
   padding: 0;
   background-color: #FFFFFF;
   color: #383637;
+}
+
+#app {
+  overflow: hidden;
 }
 
 #header-logo {
@@ -72,7 +64,8 @@ body {
 }
 
 #content-container .content-section {
-  flex: 1 0 100vw;
+  flex: none;
+  width: 100vw;
   text-align: center;
   display: flex;
   flex-flow: row nowrap;
@@ -215,8 +208,8 @@ body {
   width: 8rem;
 }
 
-.player-select,
-.token-select {
+.player-selection,
+.token-selection {
   padding: 1rem;
   margin: .5rem 1rem;
   border-radius: 50%;
@@ -227,25 +220,25 @@ body {
   width: 8rem;
 }
 
-.player-select.player1 {
+.player-selection.player1 {
   background-color: #FF4200;
   color: #FFFFFF;
   border: 2px solid #383637;
   box-shadow: 2px 2px 3px #383637;
 }
 
-.token-select.player1 {
+.token-selection.player1 {
   color: #FF4200;
 }
 
-.player-select.player2 {
+.player-selection.player2 {
   background-color: #0E68FF;
   color: #FFFFFF;
   border: 2px solid #383637;
   box-shadow: 2px 2px 3px #383637;
 }
 
-.token-select.player2 {
+.token-selection.player2 {
   color: #0E68FF;
 }
 
