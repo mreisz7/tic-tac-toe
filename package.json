@@ -2,7 +2,7 @@
   "name": "tic-tac-toe-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/mreisz7/tic-tac-toe",
+  "homepage": "https://mreisz7.github.io/tic-tac-toe/",
   "dependencies": {
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
