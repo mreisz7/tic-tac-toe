@@ -108,12 +108,12 @@ class App extends Component {
             <div className="content-main">
               <div className="content-left">
                 <h2 className="content-main-label">Player 1</h2>
-                <div className={['player-select', (this.state.player1IsComputer === false) ? 'player1' : ''].join(' ')} onClick={() => this.setPlayerType('Player1', false)}>
+                <div className={['player-selection', (this.state.player1IsComputer === false) ? 'player1' : ''].join(' ')} onClick={() => this.setPlayerType('Player1', false)}>
                   <svg>
                     <use xlinkHref="#person" />
                   </svg>
                 </div>
-                <div className={['player-select', (this.state.player1IsComputer) ? 'player1' : ''].join(' ')} onClick={() => this.setPlayerType('Player1', true)}>
+                <div className={['player-selection', (this.state.player1IsComputer) ? 'player1' : ''].join(' ')} onClick={() => this.setPlayerType('Player1', true)}>
                   <svg>
                     <use xlinkHref="#computer" />
                   </svg>
@@ -121,12 +121,12 @@ class App extends Component {
               </div>
               <div className="content-right">
                 <h2 className="content-main-label">Player 2</h2>
-                <div className={['player-select', (this.state.player2IsComputer === false) ? 'player2' : ''].join(' ')} onClick={() => this.setPlayerType('Player2', false)}>
+                <div className={['player-selection', (this.state.player2IsComputer === false) ? 'player2' : ''].join(' ')} onClick={() => this.setPlayerType('Player2', false)}>
                   <svg>
                     <use xlinkHref="#person" />
                   </svg>
                 </div>
-                <div className={['player-select', (this.state.player2IsComputer) ? 'player2' : ''].join(' ')} onClick={() => this.setPlayerType('Player2', true)}>
+                <div className={['player-selection', (this.state.player2IsComputer) ? 'player2' : ''].join(' ')} onClick={() => this.setPlayerType('Player2', true)}>
                   <svg>
                     <use xlinkHref="#computer" />
                   </svg>
@@ -147,7 +147,7 @@ class App extends Component {
             <div className="content-main">
               <div className="content-left">
                 <h2 className="content-main-label">Player 1</h2>
-                <div className="token-select player1" onClick={() => this.toggleToken()}>
+                <div className="token-selection player1" onClick={() => this.toggleToken()}>
                   <svg>
                     <use xlinkHref={(this.state.player1IsX) ? "#token-x" : "#token-o"} />
                   </svg>
@@ -155,7 +155,7 @@ class App extends Component {
               </div>
               <div className="content-right">
                 <h2 className="content-main-label">Player 2</h2>
-                <div className="token-select player2" onClick={() => this.toggleToken()}>
+                <div className="token-selection player2" onClick={() => this.toggleToken()}>
                   <svg>
                     <use xlinkHref={(this.state.player1IsX) ? "#token-o" : "#token-x"} />
                   </svg>
@@ -173,7 +173,6 @@ class App extends Component {
           {boardDisplay}
           {winner}
         </div>
-        <h2 onClick={() => this.nextView()}>Next</h2>
       </div>
       <span id="footer-copyright">&copy; 2018 Michael Reisz</span>
       <a href="https://www.mreisz.com" target="_blank" rel="noopener noreferrer">
